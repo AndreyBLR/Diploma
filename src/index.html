@@ -7,7 +7,7 @@
 
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
     <!-- Theme tittle -->
-    <title>Alons | Perfect Business Consulting Html Template</title> 
+    <title id='title'></title> 
     
     <!-- Theme style CSS -->      
     <link href="css/style.css" rel="stylesheet"> 
@@ -26,7 +26,7 @@
 		<div class="container">
 			<div class="header_top_inner row m-0">
 				<ul class="top_menu col-lg-6 col-md-7 p-0">
-					<li><a href="#" class="number"><small>Call us</small>029292162</a></li>
+					<li><a href="#" class="number"><small id='call_us'></small>029292162</a></li>
 					<li><a href="#">Career</a></li>
 					<li><a href="#">Iobs</a></li>
 					<li><a href="#">Support</a></li>
@@ -45,7 +45,13 @@
 									<span><i class="fa fa-search"></i></span>
 								</li>
 							</ul>
-						</li>
+                        </li>
+                        <li>
+                            <a id='ruAnchor' href="#" onclick="setLanguage('ru')">Русский</a> 
+                        </li>
+                        <li>
+                            <a id='enAnchor' href="#" onclick="setLanguage('en')">English</a>
+                        </li>                        
 					</ul>
 				</div>
 			</div>
@@ -814,5 +820,43 @@
     <script src="vendors/bootstrap-selector/jquery.nice-select.min.js"></script> 
     <!-- Theme js / Custom js -->
     <script src="js/theme.js"></script>
+
+    <script>
+        var resources; 
+
+        function initializeResources() {
+            if (localStorage.getItem('language') == null)
+            localStorage.setItem('language', 'en');
+
+            var lang = localStorage.getItem('language');
+            var page = window.location.pathname.split("/").pop().split('.')[0];
+
+            $.ajax({ 
+                url:  'lang/' + lang + '/' + page + '.json', 
+                dataType: 'json', async: false, dataType: 'json', 
+                success: function (jsonContent) { 
+                    console.log('success');
+                    resources = jsonContent
+                },
+                error: function (jqXHR, textStatus, errorThrown) { 
+                    console.log('error');
+                }
+            });
+        }
+        
+        function setLanguage(lang) {            
+            localStorage.setItem('language', lang);
+            window.location.reload(true); 
+        }
+
+        $(document).ready(function(){
+            initializeResources();
+
+            for (var property in resources) {
+                $('#'+ property).text(resources[property])
+            }
+        });
+        
+    </script>
 </body>
 </html>

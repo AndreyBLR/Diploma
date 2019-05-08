@@ -1528,6 +1528,11 @@ a.blog-title:hover {
     margin-bottom: 50px;
 }
 
+.quote-btn h4{
+    font-size: 25px;
+    color: #232323;
+    font-weight: 600;
+}
 
 /*end of single blog design*/
 
@@ -2034,24 +2039,28 @@ button.btn.applybtn.btn-default.btn-sm:hover {
 }
 
 .single-improvement .icon {
-    width: 100px;
-    height: 100px;
-    line-height: 120px;
+    width: 90px;
+    height: 90px;
+    line-height: 108px;
     display: inline-block;
     background: #eff1f5;
-    border-radius: 50px;
-    margin-bottom: 20px;
+    border-radius: 45px;
+    margin-bottom: 18px;
     transition: .5s;
-    font-size: 50px;
-    line-height: 100px;
+    font-size: 45px;
+    line-height: 90px;
     color: #3a7cdd;
     border: 4px solid transparent;    
 }
 
 .single-improvement h4 {
-    font-size: 20px;
+    font-size: 18px;
     color: #232323;
     font-weight: 600;
+}
+
+.single-improvement p {
+    font-size: 15px;
 }
 
 .single-improvement:hover .icon {
@@ -2152,7 +2161,7 @@ button.btn.applybtn.btn-default.btn-sm:hover {
 }
 
 .download-pdf a {
-    text-align: center;
+    text-align: left;
     display: block;
     padding: 15px;
     margin-bottom: 5px;
@@ -2169,7 +2178,7 @@ button.btn.applybtn.btn-default.btn-sm:hover {
 }
 
 .sidebar-get-in-touch {
-    padding: 30px 20px;
+    padding: 30px 12px;
     background-image: url(../img/stouch.png);
     position: relative;
     color: #fff;

@@ -2,9 +2,9 @@
 
     $("#pricipal-slide").slider({
         range: "min",
-        min: 10000,
-        max: 5000000,
-        value: 100000,
+        min: 1000,
+        max: 500000,
+        value: 10000,
         step: 1000,
         slide: function(event, ui) {
             $("#pricipal").text(ui.value);
@@ -15,10 +15,10 @@
 
     $("#totalyear-slide").slider({
         range: "min",
-        min: 12,
-        max: 360,
-        step: 1,
-        value: 120,
+        min: 3,
+        max: 120,
+        step: 3,
+        value: 12,
         slide: function(event, ui) {
             $("#totalyear").text(ui.value);
             loancalculate();
@@ -28,9 +28,9 @@
 
     $("#intrest-slide").slider({
         range: "min",
-        min: 6.10,
-        max: 16.20,
-        step: 0.01,
+        min: 3,
+        max: 25,
+        step: 0.1,
         value: 10,
         slide: function(event, ui) {
             $("#intrest").text(ui.value);

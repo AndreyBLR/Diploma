@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*--------------------------------
+EMI Calculator
+---------------------------------*/
+.loantable { margin-top: 40px; }
+.table-head { background: #eff3f8; }
+.loan-title { margin-bottom: 30px; }
+.table-bordered { border: 1px solid transparent; color: #333; }
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th { border: 1px solid #dee4ee; color: #3c4d6b; }
+.table-striped>tbody>tr:nth-of-type(odd) { background-color: #fafcfd; }
+.table>thead>tr>th { padding: 12px 43px 12px; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd; text-align: center; }
+

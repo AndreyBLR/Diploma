@@ -21,117 +21,7 @@
     <body class="js">
         <div id="preloader"></div>
         <!-- start header area -->
-        <header class="header-area">
-            <div class="topbar-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 text-left">
-                            <div class="left-info">
-                                <p><span class="fa fa-clock"></span>Время Работы
-                                    : Пн - Сб : 8.30 до 16.00</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 text-right">
-                            <div class="right-info">
-                                <p><a href="#"><span><i class="fa fa-download"></i>Скачать
-                                            Брошюры</span></a> <a href="#"><span><i class="fa fa-futbol-o"></i>Поддержка</span>
-                                    </a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="logo-right-address">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="sitelogo">
-                                <a href="../index.html"><img src="../asset/img/logo.png" alt="" /></a>
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="right-address">
-                                <div class="single-address">
-                                    <div class="icon">
-                                        <img src="../asset/img/call.png" alt="" />
-                                    </div>
-                                    <div class="content">
-                                        <p>
-                                            <span>Позвоните Нам:</span> 7555
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="single-address">
-                                    <div class="icon">
-                                        <img src="../asset/img/envalope.png" alt="" />
-                                    </div>
-                                    <div class="content">
-                                        <p>
-                                            <span>Напишите Нам: </span>
-                                            support@ideabank.by
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-11 col-lg-11">
-                            <div id="cssmenu">
-                                <ul>
-                                    <li><a href="../index.html">Главная</a>
-                                    </li>
-                                    <li><a href="../about.html">О Нас</a></li>
-                                    <li><a href="../financing.html">Финансирование</a>
-                                        <ul>
-                                            <li><a href="credits/fast_credit.html">Быстрые Кредиты</a></li>
-                                            <li><a href="../services-image.html">Инвестиционные Кредиты</a></li>
-                                            <li><a href="../business-loan.html">Кредиты в текущую деятельность</a></li>
-                                            <li><a href="../car-loan.html">Кредиты на специальных условиях</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="../financing.html">Доходы</a>
-                                        <ul>
-                                            <li><a href="../services-image.html">Депозит
-                                                    №1</a></li>
-                                            <li><a href="../business-loan.html">До
-                                                    Востребования</a></li>
-                                            <li><a href="../education-loan.html">Ценные
-                                                    Бумаги</a></li>
-                                            <li><a href="../car-loan.html">Прочие
-                                                    Услуги</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="../financing.html">Обслуживание
-                                            Счетов</a>
-                                        <ul>
-                                            <li><a href="../services-image.html">Базовый</a></li>
-                                            <li><a href="../business-loan.html">Привет</a></li>
-                                            <li><a href="../education-loan.html">Оптимальный</a></li>
-                                            <li><a href="../car-loan.html">Бизнес</a></li>
-                                            <li><a href="../home-loan.html">Индивидуальный</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="../contact.html">Свяжитесь с Нами</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-1 text-right">
-                            <div class="searchbtn">
-                                <a href="#" class="fa fa-search"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="searchform">
-                <input type="text" name="s" placeholder="Поиск...">
-                <button><i class="fa fa-times"></i></button>
-            </div>
+        <header id="header" class="header-area">
         </header>
         <!-- end of header area -->
         <div class="page-header">
@@ -152,48 +42,35 @@
         <section class="loan-calculator-page section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 single-nav">
-                        <h3>Home Loan
-                            <span>@ 3.75%</span>
-                        </h3>
-                    </div>
-                    <div class="col-md-3 single-nav">
-                        <h3>Personal Loan
-                            <span>@ 8.72%</span>
-                        </h3>
-                    </div>
-                    <div class="col-md-3 single-nav">
-                        <h3>Car Loan
-                            <span>@ 5.68%</span>
-                        </h3>
-                    </div>
-                    <div class="col-md-3 single-nav">
-                        <h3>Business Loan
-                            <span>@ 7.40%</span>
-                        </h3>
-                    </div>
-                </div>
-                <div class="row">
                     <div class="col-md-8 loan-slider-box">
+                        <div class="single-loan-slider single-get-touch">
+                            <h4>Валюта</h4>
+                            <select id="currency-select" required>
+                                <option value="BYN" min-principal="30000" max-principal="50000" min-month="3" max-month="24" min-interest="12" max-interest="25">BYN</option>
+                                <option value="USD" min-principal="15000" max-principal="25000" min-month="3" max-month="24" min-interest="9.5" max-interest="15">USD</option>
+                                <option value="EUR" min-principal="15000" max-principal="25000" min-month="3" max-month="24" min-interest="8.5" max-interest="15">EUR</option>
+                            </select>
+                        </div>
+                        <br>
                         <div class="single-loan-slider">
-                            <h4>Home Loan Amount</h4>
-                            <div id="pricipal-slide"></div>
+                            <h4>Мне нужно</h4>
+                            <div id="pricipal-slide" min-range="30000" max-range="50000"></div>
                             <div>
-                                <span>$</span>
                                 <h6 id="pricipal"></h6>
+                                <span id="currency-span">BYN</span>
                             </div>
                         </div>
                         <div class="single-loan-slider">
-                            <h4>Loan Months</h4>
-                            <div id="totalyear-slide"></div>
+                            <h4>На срок</h4>
+                            <div id="totalyear-slide" min-range="3" max-range="24"></div>
                             <div>
                                 <h6 id="totalyear"></h6>
                                 <span>Months</span>
                             </div>
                         </div>
                         <div class="single-loan-slider">
-                            <h4>Interest Rate</h4>
-                            <div id="intrest-slide"></div>
+                            <h4>Процентная ставка</h4>
+                            <div id="intrest-slide" min-range="12" max-range="25"></div>
                             <div>
                                 <h6 id="intrest"></h6>
                                 <span>%</span>
@@ -203,116 +80,29 @@
                     <div class="col-md-4 text-center loan-emi">
                         <div class="total-calculation">
                             <div class="single-total">
-                                <h5>Loan EMI</h5>
+                                <h5>Месячный Платёж</h5>
                                 <h2 class="emi-price" id="emi">0</h2>
                             </div>
                             <div class="single-total">
-                                <h5>Total Interest Payable</h5>
+                                <h5>Сумма Процентов</h5>
                                 <h2 id="tbl_emi">0</h2>
                             </div>
                             <div class="single-total">
-                                <h5>Total Payment
-                                    <br>(Principal + Interest)</h5>
+                                <h5>Общая Сумма
+                                    <br>(Сумма Кредита + Проценты)</h5>
                                 <h2 id="tbl_la">0</h2>
                             </div>
-                            <button class="btn applybtn btn-default btn-sm">APPLY NOW</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- start footer area -->
-        <section class="footer-area footer-two section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 col-lg-5">
-                        <div class="footer-widget">
-                            <div class="footer-title">
-                                <h4>О Нас</h4>
-                            </div>
-                            <p>Более чем 24-летний опыт и знания. IdeaBank (Беларусь) является универсальным банком и по величине активов, кредитного портфеля, средств клиентов, нормативного капитала входит в первую «десятку» крупнейших белорусских банков. Уставный фонд Банка составляет 101 368 726 белорусских рублей.</p>
-                            <div class="footer-two-social">
-                                <a href="#" class="fa fa-facebook-f"></a>
-                                <a href="#" class="fa fa-twitter"></a>
-                                <a href="#" class="fa fa-google-plus"></a>
-                                <a href="#" class="fa fa-pinterest"></a>
-                                <a href="#" class="fa fa-linkedin"></a>
-                                <a href="#" class="fa fa-instagram"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-lg-3">
-                        <div class="footer-widget recent-post">
-                            <div class="footer-title">
-                                <h4>Время Работы</h4>
-                            </div>
-                            <ul class="opening-time">
-                                <li>Пн : 8.30 до 19.00</li>
-                                <li>Вт : 8.30 до 19.00</li>
-                                <li>Ср : 8.30 до 19.00</li>
-                                <li>Чт : 8.30 до 19.00</li>
-                                <li>Пт : 8.30 до 19.00</li>
-                                <li>Сб - Вс : ЗАКРЫТО</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="footer-widget">
-                            <div class="footer-title">
-                                <h4>Свяжитесь с Нами</h4>
-                            </div>
-                            <div class="contact-widget">
-                                <ul>
-                                    <li>
-                                        <div class="icon">
-                                            <img src="asset/img/map-pin.png" alt="">
-                                        </div>
-                                        <div class="content">
-                                            <p>улица Змитрока Бядули 11, Минск</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <img src="asset/img/envalope-2.png" alt="">
-                                        </div>
-                                        <div class="content">
-                                            <p>support@ideabank.by
-                                                <span>ответим в течении двух часов</span></p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <img src="asset/img/envalope-2.png" alt="">
-                                        </div>
-                                        <div class="content">
-                                            <p>
-                                                +375-17-229-96-02
-                                                +375-29-675-50-74
-
-                                                <span>Звонки с 8.30 до 17.00</span></p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="copy-right-section second-copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-left">
-                        <div class="copyright-text">
-                            <p><i class="fa fa-copyright"></i> 2019 IdeaBank. Все права защищены.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <footer id="footer"></footer>
         <!-- end of footer area -->
         <!-- Optional JavaScript -->
         <script src="asset/js/jquery-3.3.1.min.js"></script>
+        <script src="asset/js/load-templates.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
         <script src="asset/js/popper.min.js"></script>

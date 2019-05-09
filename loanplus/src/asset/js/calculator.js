@@ -121,7 +121,7 @@ function loan_calculate(active_option) {
     var loantable = $("#loantable");
 
     if (loantable.length) {
-        var detailDesc = "<thead><tr class='table-head'><th>Payment No.</th><th>Begining Balance</th><th>EMI</th><th>Principal</th><th>Interest</th><th>Ending Balance</th></thead><tbody>";
+        var detailDesc = "<thead><tr class='table-head'><th>Номер Платежа</th><th>Начальный Баланс</th><th>Платёж</th><th>Основной Долг</th><th>Сумма Процентов</th><th>Конечный Баланс</th></thead>";
         var bb = parseInt(loanAmount);
         var int_dd = 0;
         var pre_dd = 0;
@@ -130,6 +130,7 @@ function loan_calculate(active_option) {
             int_dd = bb * (rateOfInterest / 100 / 12);
             pre_dd = emi.toFixed(2) - int_dd.toFixed(2);
             end_dd = bb - pre_dd.toFixed(2);
+            detailDesc += "<tbody>";
             detailDesc +=
                 "<tr><td>" +
                 j +

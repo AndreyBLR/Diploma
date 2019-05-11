@@ -36,7 +36,7 @@
                                             <h2 class="sub-title" data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRIght">Индивидуальный подход к каждому клиенту</h2>
                                             <h2 class="main-title" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutLeft">Комплексное банковское обслуживание </h2>
                                             <div class="welcome-button" data-animation-in="fadeInDown" data-animation-out="animate-out fadeOutDown">
-                                                <a href="#" class="button-secondary btn btn-default">Подробнее</a>
+                                                <a href="rko/rko.html" class="button-secondary btn btn-default">Подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -54,9 +54,15 @@
                                         <div class="slider-cell">
                                             <h2 class="sub-title" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutLeft">Выгодные условия, привлекательные процентные ставки</h2>
                                             <h2 class="main-title" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutLeft">Депозиты и кредиты для бизнеса</h2>
-                                            <div class="welcome-button" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutLeft">
-                                                <a href="#" class="button-secondary btn btn-default">Подробнее</a>
+                                            <div class="row">
+                                                <div class="welcome-button" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutLeft">
+                                                    <a href="credits/financing.html" class="button-secondary btn btn-default">Кредиты</a>
+                                                </div>
+                                                <div class="welcome-button" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutLeft">
+                                                    <a href="deposits/incoming.html" class="button-secondary btn btn-default">Депозиты</a>
+                                                </div>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -151,24 +157,6 @@
             </div>
         </section>
         <!-- end of loan options checking section -->
-        <!-- .start check your rate button -->
-        <section class="check-rate-btn-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="check-your-rate-text">
-                            <h4>Checking your loan options does not affect your credit score</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="check-your-rate-btn">
-                            <a href="#" class="btn btn-default btn-sm">CHECK YOUR RATE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end of check your rate button -->
         <!-- .start loan process second -->
         <section class="second-loan-process section-padding">
             <div class="container">
@@ -324,17 +312,26 @@
                 </div>
                 <div class="row">
                     <div class="col-md-8 loan-slider-box">
+                        <div class="single-loan-slider single-get-touch">
+                            <h4>Валюта</h4>
+                            <select id="currency-select" required>
+                                <option value="BYN" min-principal="5000" max-principal="1000000" min-month="3" max-month="60" min-interest="5" max-interest="25">BYN</option>
+                                <option value="USD" min-principal="5000" max-principal="1000000" min-month="3" max-month="60" min-interest="0.5" max-interest="15">USD</option>
+                                <option value="EUR" min-principal="5000" max-principal="1000000" min-month="3" max-month="60" min-interest="0.5" max-interest="15">EUR</option>
+                            </select>
+                        </div>
+                        <br>
                         <div class="single-loan-slider">
                             <h4>Мне нужно</h4>
-                            <div id="pricipal-slide"></div>
+                            <div id="pricipal-slide" min-range="30000" max-range="50000"></div>
                             <div>
-                                <span>$</span>
                                 <h6 id="pricipal"></h6>
+                                <span id="currency-span">BYN</span>
                             </div>
                         </div>
                         <div class="single-loan-slider">
                             <h4>На срок</h4>
-                            <div id="totalyear-slide"></div>
+                            <div id="totalyear-slide" min-range="3" max-range="24"></div>
                             <div>
                                 <h6 id="totalyear"></h6>
                                 <span>Мес.</span>
@@ -342,7 +339,7 @@
                         </div>
                         <div class="single-loan-slider">
                             <h4>Процентная ставка</h4>
-                            <div id="intrest-slide"></div>
+                            <div id="intrest-slide" min-range="12" max-range="25"></div>
                             <div>
                                 <h6 id="intrest"></h6>
                                 <span>%</span>
@@ -356,14 +353,14 @@
                                 <h2 class="emi-price" id="emi">0</h2>
                             </div>
                             <div class="single-total">
-                                <h5>Общая Сумма</h5>
-                                <h2 id="tbl_la">0</h2>
-                            </div>
-                            <div class="single-total">
                                 <h5>Сумма Процентов</h5>
                                 <h2 id="tbl_emi">0</h2>
                             </div>
-                            <button class="btn applybtn btn-default btn-sm">ОФОРМИТЬ ЗАЯВКУ</button>
+                            <div class="single-total">
+                                <h5>Общая Сумма
+                                    <br>(Сумма Кредита + Проценты)</h5>
+                                <h2 id="tbl_la">0</h2>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -167,7 +167,7 @@ section.experience-section.section-padding:before {
 }
 
 .single-experience .icon i{
-    color: #24c8a6;
+    color: #0096D6;
 }
 
 .single-experience .content h2 {
@@ -194,7 +194,7 @@ section.experience-section.section-padding:before {
 
 .experience-title h2 span {
     display: block;
-    color: #24c8a6;
+    color: #0096D6;
 }
 
 
@@ -283,14 +283,14 @@ section.brand-section.third-brand {
     color: #232323
 }
 .footer-three .footer-two-social a:hover {
-    background-color: #24C8A6;
+    background-color: #0096D6;
     color: #fff;
-    border: 1px solid #24C8A6;
+    border: 1px solid #0096D6;
 }
 .footer-three .footer-two-social a {
     color: #232323;
-    color: #24C8A6;
-    border: 1px solid #24C8A6;
+    color: #0096D6;
+    border: 1px solid #0096D6;
 }
 /*end of footer area*/
 

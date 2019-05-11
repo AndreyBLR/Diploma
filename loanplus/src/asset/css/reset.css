@@ -364,12 +364,12 @@ input:-webkit-autofill:focus {
 }
 
 .btn.btn-primary:hover{
-    background: #24c8a6;
+    background: #0096D6;
     color: #fff
 }
 
 .btn.btn-default{
-    background: #24c8a6;
+    background: #0096D6;
 }
 .btn.btn-default:hover{
     background: #3a7cdd;

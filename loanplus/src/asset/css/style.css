@@ -86,7 +86,7 @@ Version: 1.0.0
     float: left;
     width: 50px;
     height: 50px;
-    border: 1px solid #24c8a6;
+    border: 1px solid #0096D6;
     text-align: center;
     line-height: 50px;
     border-radius: 3px;
@@ -289,8 +289,8 @@ h2.sub-title {
 }
 
 a.btn.btn-default.button-primary {
-    background: #24c8a6;
-    border: 2px solid #24c8a6;
+    background: #0096D6;
+    border: 2px solid #0096D6;
 }
 
 a.button-secondary.btn.btn-default {
@@ -299,8 +299,8 @@ a.button-secondary.btn.btn-default {
 }
 
 a.button-secondary.btn.btn-default:hover {
-    background: #24c8a6;
-    border: 2px solid #24c8a6;
+    background: #0096D6;
+    border: 2px solid #0096D6;
     color: #fff
 }
 
@@ -341,17 +341,17 @@ a.btn.btn-default.button-primary:hover {
 }
 
 .active-main-slider .owl-nav div:hover {
-    background: #24c8a6;
+    background: #0096D6;
     color: #fff;
-    border-color: #24c8a6
+    border-color: #0096D6
 }
 
 a.button.button-secondary.hvr-bounce-to-right:before {
-    background: #24c8a6;
+    background: #0096D6;
 }
 
 a.button.button-secondary.hvr-bounce-to-right:hover {
-    border-color: #24c8a6;
+    border-color: #0096D6;
 }
 
 a.button.hvr-bounce-to-right.button-primary:hover {
@@ -449,7 +449,7 @@ a.button.hvr-bounce-to-right.button-primary:hover {
     height: 50px;
     width: 50px;
     border: 0;
-    background-color: #24c8a6;
+    background-color: #0096D6;
     color: #fff;
     cursor: pointer;
 }
@@ -763,7 +763,7 @@ section.team-section.section-padding {
 }
 
 .single-team:hover h4 {
-    color: #24c8a6;
+    color: #0096D6;
 }
 
 .team-content {
@@ -814,13 +814,13 @@ section.team-section.section-padding {
     height: 40px;
     line-height: 40px;
     background-color: #fff;
-    color: #24c8a6;
+    color: #0096D6;
     border-radius: 50px;
     transition: .4s;
 }
 
 .team-link a:hover {
-    background-color: #24c8a6;
+    background-color: #0096D6;
     color: #fff;
 }
 
@@ -946,7 +946,7 @@ input[type="submit"] {
     width: 150px;
     height: 50px;
     display: inline-block;
-    background-color: #24c8a6;
+    background-color: #0096D6;
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
@@ -1008,7 +1008,7 @@ input[type="submit"]:hover {
 }
 
 .testimonial-slider .owl-dots div.active {
-    background-color: #24c8a6
+    background-color: #0096D6
 }
 
 /*end of testimonial section*/
@@ -1055,7 +1055,7 @@ section.map-image-section.section-padding {
     bottom: 0;
     padding: 5px 20px;
     color: #fff;
-    background: #24c8a6;
+    background: #0096D6;
 }
 .article-date p{
     margin-bottom: 0;
@@ -1136,7 +1136,7 @@ section.map-image-section.section-padding {
 /*start brand section*/
 
 section.brand-section {
-    background: #24c8a6;
+    background: #0096D6;
     padding: 50px 0;
 }
 
@@ -1188,7 +1188,7 @@ section.footer-area.section-padding {
 }
 
 .mail {
-    color: #24c8a6;
+    color: #0096D6;
     font-weight: 400
 }
 
@@ -1275,7 +1275,7 @@ section.footer-area.section-padding {
 
 .form-widget .btn.btn-default {
     height: 50px;
-    background-color: #24c8a6;
+    background-color: #0096D6;
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
@@ -1475,7 +1475,7 @@ ol.breadcrumb li {
     position: absolute;
     padding: 5px 20px;
     bottom: 0;
-    background: #24c8a6;
+    background: #0096D6;
     color: #fff;
     font-size: 13px;
     font-weight: 600;
@@ -1499,7 +1499,7 @@ a.blog-title {
 }
 
 a.blog-title:hover {
-    color: #24c8a6
+    color: #0096D6
 }
 
 .single-blog a.btn.btn-primary.btn-sm {
@@ -1515,9 +1515,9 @@ a.blog-title:hover {
 }
 
 .single-blog a.btn.btn-primary.btn-sm:hover {
-    background: #24c8a6;
+    background: #0096D6;
     color: #fff;
-    border-color: #24c8a6
+    border-color: #0096D6
 }
 
 .single-blog p {
@@ -1638,7 +1638,7 @@ ul.latest-post li a h5 {
 }
 
 ul.latest-post li .post-content .date {
-    color: #24c8a6;
+    color: #0096D6;
 }
 
 ul.latest-post li {
@@ -1665,7 +1665,7 @@ ul.latest-post li:last-child {
 }
 
 .tagcloud a:hover {
-    background-color: #24c8a6;
+    background-color: #0096D6;
     color: #fff;
 }
 
@@ -1909,7 +1909,7 @@ h2.leave-a-comment {
 }
 
 .ui-widget-header {
-    background: #24c8a6 !important;
+    background: #0096D6 !important;
     border: 0 !important;
 }
 
@@ -1937,13 +1937,13 @@ h2.leave-a-comment {
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
-    background: #24c8a6 !important;
+    background: #0096D6 !important;
 }
 
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-    background: #24c8a6 !important;
+    background: #0096D6 !important;
 }
 
 .single-loan-slider input {
@@ -2208,7 +2208,7 @@ button.btn.applybtn.btn-default.btn-sm:hover {
 }
 
 .sidebar-get-in-touch p span {
-    color: #24c8a6;
+    color: #0096D6;
 }
 
 .sidebar-get-in-touch p {
@@ -2573,7 +2573,7 @@ section.testimonial-page.section-padding {
     margin-bottom: 20px
 }
  .how-it-work-backgrond{
-    background: #24c8a6;
+    background: #0096D6;
  }
 
 .how-it-work-backgrond .how-it-work-content *{

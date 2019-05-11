@@ -96,7 +96,7 @@ header.second-header .btn.btn-primary {
 
 .second-about-content a.button {
     width: 160px;
-    background: #24c8a6;
+    background: #0096D6;
 }
 
 .about-cradit-list li {
@@ -114,7 +114,7 @@ header.second-header .btn.btn-primary {
     content: "\f00c";
     font-family: fontawesome;
     left: 0;
-    color: #24c8a6;
+    color: #0096D6;
 }
 
 .about-cradit-list {
@@ -201,7 +201,7 @@ section.check-rate-btn-area {
 }
 
 .check-your-rate-btn a.button {
-    background-color: #24c8a6;
+    background-color: #0096D6;
 }
 
 .check-your-rate-btn {
@@ -222,7 +222,7 @@ section.check-rate-btn-area {
     position: absolute;
     width: 80px;
     height: 80px;
-    background: #24c8a6;
+    background: #0096D6;
     font-size: 40px;
     font-weight: 600;
     font-family: 'Muli', sans-serif;
@@ -393,7 +393,7 @@ section.dream-quote:before {
 }
 
 .dream-quote-text .btn.btn-default.btn-sm:hover {
-    background: #24c8a6;
+    background: #0096D6;
 }
 
 

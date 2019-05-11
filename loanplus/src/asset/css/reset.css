@@ -361,10 +361,12 @@ input:-webkit-autofill:focus {
 }
 .btn.btn-primary{
     background: #3a7cdd;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .btn.btn-primary:hover{
-    background: #0096D6;
+    background: #0358f7;
     color: #fff
 }
 

@@ -173,7 +173,7 @@ div#cssmenu {
     position: absolute;
     width: calc(100% - 17px);
     height: 3px;
-    background: #24c8a6;
+    background: #0096D6;
     content: "";
     left: 8.5px;
     top: -3px;
@@ -190,7 +190,7 @@ div#cssmenu {
 
 #cssmenu ul ul li a:hover,
 #cssmenu ul li a:hover {
-    color: #24c8a6;
+    color: #0096D6;
 }
 
 #cssmenu li:hover>ul>li {

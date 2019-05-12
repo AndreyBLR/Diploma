@@ -20,6 +20,10 @@ const select_element = document.querySelector('#currency-select');
         $("#totalyear-slide").slider("option", "min", min);
         $("#totalyear-slide").slider("option", "value", min);
         $("#totalyear-slide").slider("option", "max", max);
+        if (active_option.hasAttribute("step-month")) {
+            var step = parseFloat(active_option.getAttribute("step-month"));
+            $("#totalyear-slide").slider("option", "step", step);
+        }
         $("#totalyear").text(min);
 
         min = parseFloat(active_option.getAttribute("min-interest"));
@@ -64,12 +68,15 @@ function initialize_sliders(active_option) {
 
     min_value = parseFloat(active_option.getAttribute("min-month"));
     max_value = parseFloat(active_option.getAttribute("max-month"));
-
+    var step = 3;
+    if (active_option.hasAttribute("step-month")) {
+        step = parseFloat(active_option.getAttribute("step-month"));
+    }
     $("#totalyear-slide").slider({
         range: "min",
         min: min_value,
         max: max_value,
-        step: 3,
+        step: step,
         value: min_value,
         slide: function (event, ui) {
             $("#totalyear").text(ui.value);
